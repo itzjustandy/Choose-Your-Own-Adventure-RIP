@@ -1,6 +1,6 @@
 # Choose.py
-# by [YourNameHere]
-# Description: starter code for the Choose Your
+# by Andy Nguyen and Stephanie Ignacio
+# Description: choose your own adventure game
 # Own Adventure Project
 
 # Import Statements
@@ -14,8 +14,15 @@ w.pack()
 
 def intro():
     """ Introductory Function -> starts the story going """
-    messagebox.showinfo("Title", "\nHello, you are a _____ from ____. " + \
-                        "You stumble across such and such.")
+    messagebox.showinfo("Awake", "You find yourself slowly being stirred awake.\n" +
+                        "You open your eyes to find yourself lying on the ground of an unknown\n" + 
+                        "room. Sitting up, you take a look around the room. From the ceiling\n" +
+                        "down to the floor it is made entirely out of concrete and is empty,\n" +
+                        "except for two sets of stairs and a window. Try and try as you might you\n" +
+                        "you just can't seem to remember how exactly you ended up where you are.\n" +
+                        "You push those thoughts aside and stand up, making your way to only\n" +
+                        "window in the room. Looking out 
+    
     choice = simpledialog.askinteger("Choose wisely",
                                    "You have a choice to pick: 1 or 2.")
     if choice == 1:
