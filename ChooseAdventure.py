@@ -34,8 +34,21 @@ def intro():
 
 ################ Student A Functions #####################
 def upstairs():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    choice = simpledialog.askinteger("Rooftop",
+                                     "You climb up and up the staircase, yet the stairs never seem to end.\n" +
+                                     "After climbing the stairs for what seemed like an eternity, you finally\n" +
+                                     "reach the rooftop. When you get there you scan the entirety of the area\n" +
+                                     "only to once again conclude that you are surrounded by skyscrapers, all\n" +
+                                     "at leas 20 stories tall. Taking a second glance around, you notice that on\n" +
+                                     "each tower, there is a suspension bridge connecting one roof top\n" +
+                                     "another. This intrigues, yet scares you at the same time. Why are\n" +
+                                     "there suspension bridges? Why is there skyscrapers? How on did\n" + 
+                                     "I end up here? Question after question begin to flood your already clouded\n" +
+                                     "mind, until you ask yourself a question that makes you stop in your\n" +
+                                     "tracks and think. What should you do now?\n\n\" +
+                                     "Should you:\n 1: Cross the suspension bridge. \n 2: Stay where you are\n" +
+                                     "and wait for help to arrive.")
+                                        
     if (choice == 1):
         messagebox.showinfo("The End",
                             "You chose right.  THE END")
@@ -48,7 +61,7 @@ def upstairs():
 
 ################ Student B Functions #####################
 def choice2():
-    choice = simpledialog.askinteger("Choose wisely",
+    choice = simpledialog.askinteger("Dead End",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
     if (choice == 1):
         messagebox.showinfo("The End",
