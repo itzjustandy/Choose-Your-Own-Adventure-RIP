@@ -50,12 +50,22 @@ def upstairs():
                                      "and wait for help to arrive.")
                                         
     if (choice == 1):
-        messagebox.showinfo("The End",
+        messagebox.showinfo("Crossing",
                             "You chose right.  THE END")
 
     elif (choice == 2):
         messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+                            "The idea of having to cross the suspension bridge frightens you.\n" +
+                            "There is no way you are crossing on to the next building. You sit down\n" +
+                            "in the middle of the rooftop, taking shelter underneath one of the\n" +
+                            "structures on the roof. You sit there with the hope that maybe somebody,\n" +
+                            "anybody will come out to rescue you. Seconds turn to minutes, and minutes\n" +
+                            "into hours. Boredom begins to consume you and you soon become sleepy. Deciding\n" +
+                            "that a quick nap wouldn't hurt, you close your eyes and begin to drift away.\n" +
+                            "However, this is your mistake. The moment you fall asleep, he approaches\n"+
+                            "you from behind, knife in hand, striking you straight through the heart.\n" +
+                            "Who is he? Well that's for you to never find out, as you descend into an\n" +
+                            "eternal slumber sent there by the man himself. THE END")
     else:
         choice1()
 
