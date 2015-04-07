@@ -69,7 +69,7 @@ def upstairs():
     else:
         choice1()
 
-################ Student B Functions #####################
+################ Andy's Functions #####################
 def choice2():
     choice = simpledialog.askinteger("Dead End",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
