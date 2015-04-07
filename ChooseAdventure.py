@@ -4,9 +4,11 @@
 # Own Adventure Project
 
 # Import Statements
+import random
+import math
 from tkinter import *
-import tkinter.simpledialog
-import tkinter.messagebox
+import tkinter.simpledialog as simpledialog
+import tkinter.messagebox as messagebox
 
 root = Tk()
 w = Label(root, text="Choose Your Own Adventure")
@@ -45,7 +47,7 @@ def upstairs():
                                      "there suspension bridges? Why is there skyscrapers? How on did\n" + 
                                      "I end up here? Question after question begin to flood your already clouded\n" +
                                      "mind, until you ask yourself a question that makes you stop in your\n" +
-                                     "tracks and think. What should you do now?\n\n\" +
+                                     "tracks and think. What should you do now?\n" +
                                      "Should you:\n 1: Cross the suspension bridge. \n 2: Stay where you are\n" +
                                      "and wait for help to arrive.")
                                         
@@ -66,24 +68,8 @@ def upstairs():
                             "you from behind, knife in hand, striking you straight through the heart.\n" +
                             "Who is he? Well that's for you to never find out, as you descend into an\n" +
                             "eternal slumber sent there by the man himself. THE END")
+        
     else:
-        choice1()
-
-################ Andy's Functions #####################
-def choice2():
-    choice = simpledialog.askinteger("Dead End",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
-    if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
-
-    elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
-    else:
-        choice2()
-
-################ Main #####################
+        exit
 intro()
-
 root.destroy()
