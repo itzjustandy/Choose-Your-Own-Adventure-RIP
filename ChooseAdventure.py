@@ -71,5 +71,20 @@ def upstairs():
         
     else:
         exit
+        
+        def downstairs():
+     choice = simpledialog.askinteger("No Exit", "You head down the set of stairs hoping to find an exit. The building\n" +
+                                      "was absolutely silent, the only thing you could hear was the pitter patter of your own\n" +
+                                      "feet, and you were starting to freak out. You wanted to get out of there as soon as\n" +
+                                      "you could. Once you reached the bottom of the stairs however, you knew that wasn't going to\n" +
+                                      "be possible. Right across from you was your only way out of this building, bounded and boarded up.\n" +
+                                      "You pulled and pried, hoping you could remove enough away from the door so you could leave, but to\n" +
+                                      "your disappointment, nothing would budge. Fear and confusion slowly starting to bubble up inside\n" +
+                                      "of you, you made your way back up the stairs so you could travel up the second set of stairs in the\n" +
+                                      "first room you were in.\n\n" +
+                                      "Press 1 to continue.")
+     if (choice == 1):
+         upstairs()
+        
 intro()
 root.destroy()
