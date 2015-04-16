@@ -52,8 +52,7 @@ def upstairs():
                                      "and wait for help to arrive.")
                                         
     if (choice == 1):
-        messagebox.showinfo("Crossing",
-                            "You chose right.  THE END")
+        messagebox.showinfo("Crossing", "Once you crossed the bridge and set foot upon the new rooftop, you are\n" 
 
     elif (choice == 2):
         messagebox.showinfo("The End",
