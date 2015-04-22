@@ -12,6 +12,11 @@ root = Tk()
 w = Label(root, text="Choose Your Own Adventure")
 w.pack()
 
+# Notes
+"""
+91 Col per line
+"""
+messagebox.showinfo("fake","11111111111111111111111111111111111111111111111111111111111fass")
 def intro():
     """ Introductory Function -> starts the story going """
     choice = simpledialog.askinteger("Awake", "You find yourself slowly being stirred awake.\n" +
@@ -45,7 +50,7 @@ def upstairs():
                                      "there suspension bridges? Why is there skyscrapers? How on did\n" + 
                                      "I end up here? Question after question begin to flood your already clouded\n" +
                                      "mind, until you ask yourself a question that makes you stop in your\n" +
-                                     "tracks and think. What should you do now?\n\n\" +
+                                     "tracks and think. What should you do now?\n\n" +
                                      "Should you:\n 1: Cross the suspension bridge. \n 2: Stay where you are\n" +
                                      "and wait for help to arrive.")
                                         
@@ -70,18 +75,86 @@ def upstairs():
         choice1()
 
 ################ Andy's Functions #####################
-def choice2():
-    choice = simpledialog.askinteger("Dead End",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+def cut():
+    messagebox.showinfo("Cut the Ropes", "How terrible of them to try and kill you." 
+                        " Luckily you had a headstart, so after you cross the bridge you"
+                        " cut the ropes leaving them on the other building.")
+                        
+    messagebox.showinfo("Cut the Ropes",
+                        " It'll be awhile before they can find you now. Onward"
+                        " you go, searching for your only way home. Time goes on"
+                        " and you can't tell if it's been days or weeks since"
+                        " you've been there.")
+
+    messagebox.showinfo("Cut the Ropes",
+                        " After a while you start to think that perhaps they had been lying."
+                        " Maybe there was no helicopter."
+                        " Maybe they were delusional. Maybe there wasn't a way to get home."
+                        " After crossing to another"
+                        " building you come across a masked figure, standing"
+                        " there as if waiting for you.")
+
+    messagebox.showinfo("Cut the Ropes",
+                        " And right behind them lies the ever elusive helicopter,"
+                        " ready to take you home."
+                        " However, dread fills you instead. You were so"
+                        " close to getting home if it weren't for them."
+                        " They motion for you to jump off the building and get it over with.")
+    
+
+    
+    choice = simpledialog.askinteger("Cut The Ropes", "What now?\n\n" +
+                                     "1: Give up?\n" +
+                                     "2: Fight for your chance to go home?")
     if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
+        messagebox.showinfo("Give up", "You're absolutely exhausted. You've been walking"
+                            " for who knows how long, and the food and wter you've had"
+                            " has been limited. You kow you face no chance of winning a"
+                            " fight against the masked. So slowly, you inch your way towards"
+                            " the edge of the roof.")
+
+        messagebox.showinfo("Give up",
+                            " You take one last look at the helicopter and then to the"
+                            " masked man. You can't tell if it's because you are going"
+                            " delusional, but the masked man bows its head a bit, as if"
+                            " showing disappointment in the decision you've made."
+                            " And that is your last thought as you fall off the"
+                            " building's edge, and plunge into the darkness.")
+
+        messagebox.showinfo("Give up", "YOU ARE DEAD\n"
+                            "You have chosen the easy way out.\n\n"
+                            "THE END.")
+        
 
     elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+        messagebox.showinfo("Fight", " You've made it this far, there's no way you're"
+                            " going to give up now. You brandish your weapon and get"
+                            " into a fighting stance waiting for the masked one to make"
+                            " a move. When he does however, it surprises you, for it"
+                            " doesn't look like it intends to fight, but rather indicates"
+                            " for you to go on the helicopter.")
+
+        messagebox.showinfo("Fight",
+                            " He looks oddly pleased and continues to gesture you towards"
+                            " the aircraft. Cautiously you make your way to the helicopter."
+                            " Even when you get on, he makes no indictive move to attack you."
+                            " Once you're safely on a different masked man starts the"
+                            " helicopter and into the air you go. You're on your way home."
+                            " Relief and fatigue hit you all at once, and you fall into a"
+                            " deep slumber.")
+
+        messagebox.showinfo("Fight",
+                            " When you awake you find yourself in an empty, unfamiliar room."
+                            " But this time you know. You are nowhere unkown, you are"
+                            " nowhere where ysomeone is trying to take your life. You look"
+                            " out the window to see familiar surroundings and people are out"
+                            " and about. You are home. You are safe.")
+
+        
     else:
-        choice2()
+        cut()
+
+cut()
 
 ################ Main #####################
 intro()
