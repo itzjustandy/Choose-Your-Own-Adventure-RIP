@@ -16,7 +16,7 @@ w.pack()
 """
 91 Col per line
 """
-messagebox.showinfo("fake","11111111111111111111111111111111111111111111111111111111111fass")
+
 def intro():
     """ Introductory Function -> starts the story going """
     choice = simpledialog.askinteger("Awake", "You find yourself slowly being stirred awake.\n" +
@@ -75,6 +75,113 @@ def upstairs():
         choice1()
 
 ################ Andy's Functions #####################
+def look():
+    messagebox.showinfo("Don't Look", "Just as you were about to look, a voice tells"
+                        " you to stop and not to look at the back of the mask."
+                        " Surprised, you find unmasked people holding weapons of a"
+                        " variety standing behind you.")
+
+    choice = simpledialog.askinteger("Don't Look", "Now what?\n\n" +
+                                     "1: Run away?\n" +
+                                     "2: Stay?")
+    if (choice == 1):
+        messagebox.showinfo("Run Away", "After the encounter you just had, you decide"
+                            " not to risk it. You begin running away to the next building."
+                            " As you're crossing the bridge, in your panic you begin to"
+                            " trip and stumble. You lose your footing and descend down to"
+                            " the ground hundreds of feet below you. No going home for you.")
+
+        messagebox.showinfo("Run Away", "YOU ARE DEAD\n"
+                            " Your idiocracy caused your death.\n\n"
+                            "THE END.")
+
+    elif (choice == 2):
+        Stay()
+    else:
+        look()
+
+def Stay():
+    messagebox.showinfo("Stay", "You stay, curious to know what they have to say."
+                            " They explain to you everything they know about the masked"
+                            " people and the world that you're in, even how to escape it."
+                            " On one of the buildings there is a helicopter that promises"
+                            " to take you back home, however only one person can go each"
+                            " day and each night. After every night, the helicopters"
+                            " position changes.")
+
+    choice = simpledialog.askinteger("Stay", "Should you...?\n\n" +
+                                     "1: Team up?\n" +
+                                     "2: Refuse?")
+    if (choice == 1):
+        TeamUp()
+    elif (choice == 2):
+        Refuse()
+    else:
+        Stay()
+
+def TeamUp():
+    messagebox.showinfo("Team up", "You team up with them. After all, there's"
+                        " safety in numbers, right? You searching for the"
+                        " helicopter, crossing building after building. Everyone"
+                        " is desperate to go home. People are becoming grumpy and"
+                        " angry. A fight erupts amongst you all. You've had it with"
+                        " them and want to leave, but at the same time are afraid"
+                        " to do so.")
+    choice = simpledialog.askinteger("Team Up", "Will you...?\n\n" +
+                                     "1: Stay?\n" +
+                                     "2: Leave?")
+    if (choice == 1):
+        messagebox.showinfo("Stay", "You try to make it worth but the fights have"
+                            " been getting worse and worse as time goes by."
+                            " One fight gets bad enough that everyone is pushing"
+                            " and shoving. One particular shove sends you spiraling"
+                            " down to the ground, hundreds of feet below you. The last"
+                            " thing you hear are you friends screaming for you."
+                            " Then everything goes blank.")
+
+        messagebox.showinfo("Stay", "YOU ARE DEAD\n"
+                            " Your kindness ends your life.\n\n"
+                            "THE END.")
+    elif (choice == 2):
+        messagebox.showinfo("Leave", "You don't want to be around when everything"
+                            " really goes south, so when everyone is asleep you"
+                            " gather up your stuff and leave. It's practically pitch"
+                            " black outside and you don't want to risk giving your"
+                            " position away to anyone by flashing a light. You"
+                            " carelessly make the decision to cross a bridge"
+                            " despite your loss of sight. Unsurprisingly, you end"
+                            " up tripping and falling to your death.")
+
+        messagebox.showinfo("Leave", "YOU ARE DEAD\n"
+                            " You are indeed the epitome of stupidity.\n\n"
+                            "THE END.")
+    else:
+        TeamUp()
+
+def Refuse():
+    messagebox.showinfo("Refuse", "You decide not to team up. You want to get home as"
+                        " soon as you can and these people will just slow you down."
+                        " You bid them goodbye and leave to search for the helicopter"
+                        " yourself. However, the others seem to think differently."
+                        " They demand you join. They feel safer this way."
+                        " The more you refuse, the more intense the argument gets when"
+                        " one of them suddenly attacks you.")
+
+    choice = simpledialog.askinteger("Refuse", "Will you...?\n\n" +
+                                     "1: Try to fight them all off?\n" +
+                                     "2: Cross the bridge and cut the ropes?")
+
+    if (choice == 1):
+        messagebox.showinfo("Fight them all", "Well that was a huge mistake."
+                            " They most definetly have the upper hand in this situation."
+                            " They easily overpower and kill you."
+                            " One less enemy for them to worry about now.")
+    elif (choice == 2):
+        cut()
+    
+    else:
+        Refuse()
+
 def cut():
     messagebox.showinfo("Cut the Ropes", "How terrible of them to try and kill you." 
                         " Luckily you had a headstart, so after you cross the bridge you"
@@ -153,8 +260,6 @@ def cut():
         
     else:
         cut()
-
-cut()
 
 ################ Main #####################
 intro()
